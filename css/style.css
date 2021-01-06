@@ -1,0 +1,1904 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/*Custom Font*/
+@font-face {
+    font-family: autograp;
+    src: url(../font/Autograf_PersonalUseOnly.ttf);
+}
+
+/*Custom Font*/
+/*Common CSS End Hear */
+
+
+.ColorSwitcher__switch{
+    border-radius: 0 50%;
+    -webkit-border-radius: 0 50%;
+    -moz-border-radius: 0 50%;
+    -ms-border-radius: 0 50%;
+    -o-border-radius: 0 50%;
+}
+
+/*====================================
+        Header Part Start Hear 
+=====================================*/
+#header_part {
+    height: 50px;
+    background: #D9B257;
+    line-height: 50px;
+    position: relative;
+}
+
+#header_part::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 89px;
+    background: url(../images/menu-shape.png);
+    z-index: -1;
+}
+
+.header_text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.header_text p span {
+    text-transform: uppercase;
+}
+
+.header_contact a {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header_contact a i {
+    margin-right: 10px;
+}
+
+.header_contact p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+}
+
+.header_contact p i {
+    margin-right: 10px;
+}
+
+/*====================================
+        Header Part End Hear 
+=====================================*/
+
+/*====================================
+        Menu Part Start Hear 
+=====================================*/
+#menu_part {
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin-right: 45px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover {
+    color: #d9b257;
+}
+
+.main_menu .navbar-nav .nav-item {
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item ul {
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-item:hover ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -10px;
+}
+
+.main_menu .navbar-nav .nav-item ul li {
+    line-height: 0px;
+    padding: 20px 0 20px 10px;
+}
+
+.main_menu .navbar-nav .nav-item ul li a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin-right: 45px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-item ul li a:hover {
+    color: #d9b257;
+}
+
+.search_in input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 100px;
+    padding-right: 35px;
+    border-radius: 50px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+
+}
+
+.search_in input:hover {
+    color: #d9b257;
+    border: 1px solid #d9b257;
+    padding-left: 10px;
+}
+
+.search_icon button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    background: none;
+    border: none;
+    padding-right: 10px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.search_icon button:hover {
+    color: #d9b257;
+}
+
+/* Menu Fixed*/
+.menu_fix {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 100px;
+    z-index: 999;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.menu_fix .navbar-brand img {
+    height: 70px;
+}
+
+/*====================================
+        Menu Part End Hear 
+=====================================*/
+
+
+/*====================================
+        Banner Part Start Hear 
+=====================================*/
+#banner_part {
+    margin-bottom: -6px;
+}
+
+.big_slider_item {
+    position: relative;
+}
+
+.big_slider_item .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.big_slider_item .overly h5 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    color: #d9b257;
+    font-weight: 600;
+    margin-top: 145px;
+    margin-bottom: 15px;
+}
+
+.big_slider_item .overly h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.big_slider_item .overly h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 64px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 70px;
+
+}
+
+.big_slider_item .overly a {
+    padding: 20px 15px 20px 25px;
+    background: #d9b257;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.big_slider_item .overly a::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 67px;
+    background: #000000;
+    left: 165px;
+    bottom: 0;
+    rotate: 10deg;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.big_slider_item .overly a i {
+    margin-left: 55px;
+}
+
+.banner_part {
+    position: relative;
+}
+
+.small_slider {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%)
+}
+
+.sm-slider h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 44px;
+    margin-top: 30px;
+}
+
+.sm-slider h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.sm-slider p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.sm-slider .slick-center p {
+    color: #d9b257;
+}
+
+.sm-slider .slick-center h3 {
+    color: #d9b257;
+}
+
+.sm-slider .slick-center .shape1::after {
+    background: #d9b257;
+}
+
+.sm-slider .shape1 {
+    position: relative;
+    margin-top: 30px;
+}
+
+.sm-slider .shape1::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -30px;
+    width: 92%;
+    height: 1px;
+    background: #ffffff;
+}
+
+/*====================================
+        Banner Part End Hear 
+=====================================*/
+
+
+/*====================================
+        About Part Start Hear 
+=====================================*/
+.about_img img {
+    height: 665px;
+}
+
+.about_text_middle h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d9b257;
+    margin-top: 100px;
+}
+
+.about_text_middle h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    color: #999999;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.about_text_middle p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.about_text_middle a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    color: #222222;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.about_text_middle a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.about_text_middle a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background: #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.about_text_middle a:hover {
+    color: #ffffff;
+}
+
+.about_text_middle a:hover::after {
+    height: 50%;
+    z-index: -1;
+}
+
+.about_text_middle a:hover::before {
+    height: 50%;
+    z-index: -1;
+}
+
+.about_count {
+    margin-top: 100px;
+}
+
+
+.about_count .experiences h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #999999;
+}
+
+.about_count .experiences h4 span {
+    font-size: 60px;
+    color: #d9b257;
+    margin-right: 5px;
+}
+
+.about_count .project h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #999999;
+}
+
+.about_count .project h4 span {
+    font-size: 60px;
+    color: #d9b257;
+    margin-right: 5px;
+}
+
+.about_count .satistfied h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #999999;
+}
+
+.about_count .satistfied h4 span {
+    font-size: 60px;
+    color: #d9b257;
+    margin-right: 60px;
+    position: relative;
+}
+
+.about_count .satistfied h4 span::after {
+    position: absolute;
+    content: '%';
+}
+
+.about_count .experiences {
+    margin-bottom: 70px;
+}
+
+.about_count .project {
+    margin-bottom: 70px;
+}
+
+/*====================================
+        About Part End Hear 
+=====================================*/
+
+
+/*====================================
+        Service Part Start Hear 
+=====================================*/
+#service_part {
+    padding: 50px 0 138px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed;
+}
+
+.service_title h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #d9b257;
+    margin-bottom: 5px;
+}
+
+.service_title p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 34px;
+}
+
+.service_slider {
+    margin-top: 60px;
+}
+
+.service_slider_big .overly {
+    width: 400px;
+    background: #f5f5f5;
+    border: 1px solid #d9b257;
+    padding: 25px 30px 30px 0;
+}
+
+.service_slider_big .overly h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #d9b257;
+}
+
+.service_slider_big .overly p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #999999;
+    line-height: 28px;
+    margin-top: 3px;
+}
+
+.service_slider_big .overly a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: #222222;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 5px 20px;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    z-index: 1;
+}
+
+.service_slider_big .overly a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.service_slider_big .overly a:hover::after {
+    height: 50%;
+    z-index: -1;
+}
+
+.service_slider_big .overly a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background: #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.service_slider_big .overly a:hover::before {
+    height: 50%;
+    z-index: -1;
+}
+
+.service_slider_big {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service_slider_big .overly {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+}
+
+.service_slider_big img {
+    padding-right: 50px;
+}
+
+/*2nd*/
+.service_slider_small .overly {
+    width: 370px;
+    background: #f5f5f5;
+    border: 1px solid #d9b257;
+    padding: 25px 30px 30px 0;
+}
+
+.service_slider_small .overly h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #d9b257;
+}
+
+.service_slider_small .overly p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #999999;
+    line-height: 28px;
+    margin-top: 3px;
+}
+
+.service_slider_small .overly a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: #222222;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 5px 20px;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    z-index: 1;
+}
+
+.service_slider_small .overly a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.service_slider_small .overly a:hover::after {
+    height: 50%;
+    z-index: -1;
+}
+
+.service_slider_small .overly a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background: #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.service_slider_small .overly a:hover::before {
+    height: 50%;
+    z-index: -1;
+}
+
+.service_slider_small {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service_slider_small .overly {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+}
+
+.service_slider_small img {
+    padding-right: 30px;
+}
+
+#service_part .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+}
+
+#service_part .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #d9b257;
+    border-radius: 50%;
+    background: #d9b257;
+}
+
+#service_part .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#service_part .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+}
+
+/*====================================
+        Service Part End Hear 
+=====================================*/
+
+/*====================================
+        Project Part Start Hear 
+=====================================*/
+#project_part {
+    padding: 100px;
+}
+
+.project_title h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d9b257;
+    margin-bottom: 5px;
+}
+
+.project_title p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #999999;
+    line-height: 34px;
+    margin-bottom: 55px;
+}
+
+.project_img {
+    position: relative;
+}
+
+.project_img .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+
+}
+
+.project_img:hover .overly {
+    height: 100%;
+}
+
+.project_img .overly a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.project_img .overly a i {
+    margin-left: 5px;
+}
+
+.project_img:hover .overly a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project_item h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.project_item p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999999;
+}
+
+.project_item:hover h4 {
+    color: #d9b257;
+}
+
+.project_item:hover p {
+    color: #d9b257;
+}
+
+.project_item .project_texts {
+    padding-left: 50px;
+}
+
+.project_item .mr13 {
+    margin-top: 20px;
+}
+
+.project_item .mr24 {
+    margin-bottom: 10px;
+}
+
+.our_project_view {
+    margin-top: 60px;
+}
+
+.our_project_view a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 13px 20px;
+    background: #d9b257;
+}
+
+/*====================================
+        Project Part End Hear 
+=====================================*/
+
+/*====================================
+        Testimonial Part Start Hear 
+=====================================*/
+#testimonial_part {
+    padding-bottom: 200px;
+}
+
+.testimonial_title h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d9b257;
+    margin-bottom: 10px;
+}
+
+.testimonial_title p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #999999;
+    line-height: 34px;
+    margin-bottom: 55px;
+}
+
+.testimonial_slider_item {
+    padding: 30px;
+    background: #f5f5f5;
+    position: relative;
+    margin-right: 100px;
+    margin-bottom: 30px;
+
+}
+
+.testimonial_slider_item:nth-child(2) {
+    margin-left: 30px;
+}
+
+.testimonial_slider_item h3 {
+    font-family: autograp;
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+    top: 240px;
+    color: #d9b257;
+}
+
+.testimonial_slider_item p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.testimonial_slider_item img {
+    margin-top: 53px;
+    margin-left: 140px;
+}
+
+.testimonial_slider_item .overly {
+    position: absolute;
+    right: -70px;
+    bottom: -30px;
+    width: 270px;
+    padding: 40px 30px;
+    background: #d9b257;
+}
+
+.testimonial_slider_item .overly h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.testimonial_slider_item .overly p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.testimonial_slider_item .overly i {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.testimonial_slider .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #999999;
+    border-radius: 50%;
+    background: transparent;
+    outline: 0;
+}
+
+.testimonial_slider .slick-dots li.slick-active button {
+    width: 20px;
+    height: 20px;
+    border-color: #d9b257;
+    background: #d9b257;
+}
+
+.testimonial_slider .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.testimonial_slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+
+}
+
+/*====================================
+        Testimonial Part End Hear 
+=====================================*/
+
+/*====================================
+      Our Experts Part Start Hear 
+=====================================*/
+#team_part {
+    padding: 60px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+
+}
+
+.team_title h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #d9b257;
+    margin-bottom: 5px;
+}
+
+.team_title p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 34px;
+    margin-bottom: 55px;
+}
+
+.team_img {
+    position: relative;
+}
+
+.team_img .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+
+}
+
+.team_img:hover .overly {
+    height: 100%;
+}
+
+.team_img .overly a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.team_img .overly a i {
+    margin-left: 5px;
+}
+
+.team_img:hover .overly a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_item h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.team_item p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.team_item:hover h4 {
+    color: #d9b257;
+}
+
+.team_item:hover p {
+    color: #d9b257;
+}
+
+.team_item .team_texts {
+    padding-left: 50px;
+}
+
+.team_item .tr13 {
+    margin-top: 20px;
+}
+
+.team_item .tr24 {
+    margin-bottom: 10px;
+}
+
+.team_view {
+    margin-top: 60px;
+}
+
+.team_view a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 13px 20px;
+    background: #d9b257;
+}
+
+/*====================================
+      Our Experts Part End Hear 
+=====================================*/
+/*====================================
+        Blog Part Start Hear 
+=====================================*/
+#blog_part {
+    padding: 100px 0;
+}
+
+.blog_title h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d9b257;
+    margin-bottom: 5px;
+}
+
+.blog_title p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #999999;
+    line-height: 34px;
+    margin-bottom: 55px;
+}
+
+.blog_thumbnail .overly {
+    width: 370px;
+    padding: 20px 30px 30px 30px;
+    border: 1px solid #d9b257;
+    background: #f5f5f5;
+}
+
+.blog_thumbnail {
+    position: relative;
+    margin-right: 30px;
+}
+
+.blog_thumbnail .overly {
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+}
+
+.thumbani2 .overly {
+    right: 70px;
+    margin-bottom: 10px;
+}
+
+.thumbani2 {
+    padding-right: 100px;
+}
+
+.blog_thumbnail .overly h5 {
+    display: inline-block;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.blog_thumbnail .overly h5 span {
+    font-weight: 600;
+}
+
+.post_mar {
+    padding-right: 10px;
+}
+
+.blog_thumbnail .overly p {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 28px;
+}
+
+.blog_thumbnail .overly a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    padding: 10px 5px 6px 5px;
+    margin-top: 25px;
+    border-bottom: 4px solid #d9b257;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.blog_thumbnail .overly a:hover {
+    background: #d9b257;
+    color: #ffffff;
+}
+
+.blog_view_all a {
+    margin-top: 85px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 15px;
+    background: #d9b257;
+}
+
+/*====================================
+        Blog Part End Hear 
+=====================================*/
+
+/*====================================
+        Footer Part Start Hear 
+=====================================*/
+#footer_part {
+    padding: 60px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+.footer_left a {
+    margin-top: 40px;
+}
+
+.footer_left p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    margin-top: 50px;
+}
+
+.footer_middle h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.footer_phone {
+    position: relative;
+}
+
+.footer_phone i {
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.footer_phone p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.footer_phone p span {
+    display: block;
+}
+
+.footer_email {
+    position: relative;
+    margin: 50px 0;
+}
+
+.footer_email i {
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.footer_email p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.footer_email p span {
+    display: block;
+}
+
+.footer_location {
+    position: relative;
+}
+
+.footer_location i {
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.footer_location p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.footer_location p span {
+    display: block;
+}
+
+.footer_right h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.subscirbe_footer .in_btn {
+    height: 45px;
+    width: 240px;
+    background: transparent;
+    border: 1px solid #d9b257;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #444444;
+    padding-left: 15px;
+}
+
+.subscirbe_footer .sc_btn {
+    background: #d9b257;
+    color: #ffffff;
+    border: none;
+    padding: 7.5px 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    outline: 0;
+}
+
+.subscirbe_footer {
+    position: relative;
+}
+
+.subscirbe_footer .sc_btn {
+    position: absolute;
+    left: 240px;
+    top: 0;
+}
+
+.footer_social_widget {
+    margin-top: 55px;
+}
+
+.footer_social_widget h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer_social_widget .social_icon a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #d9b257;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    color: #444444;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.footer_social_widget .social_icon a:hover {
+    background: #d9b257;
+    color: #ffffff;
+}
+
+.footer_social_widget p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    margin-top: 30px;
+}
+
+/*====================================
+        Footer Part End Hear 
+=====================================*/
+/*====================================
+        About Page Part End Hear 
+=====================================*/
+/*Breadcrumb Start Hear */
+#about_breadcrumb {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    padding: 60px 0 45px;
+}
+
+#about_breadcrumb .about_page_brc nav {
+    display: inline-block;
+}
+
+#about_breadcrumb .about_page_brc h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    color: #d9b257;
+}
+
+#about_breadcrumb .about_page_brc nav li a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#about_breadcrumb .about_page_brc nav .active {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d9b257;
+}
+
+/*Breadcrumb End Hear */
+
+/* About Page About Start Hear */
+.about-page-about {
+    margin: 92px 0px;
+}
+
+.text-about-about-page p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    line-height: 26px;
+    word-spacing: 2px;
+    margin-top: 30px;
+}
+
+.text-about-about-page p span {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.img-about1 {
+    margin-top: 30px;
+}
+
+/* About Page About End Hear */
+
+/* Testimonial for about page*/
+.about-page-test h3 {
+    margin-top: 90px;
+}
+
+/* Testimonial for about page*/
+/*====================================
+        About Page Part End Hear 
+=====================================*/
+
+/*====================================
+        Service Page Part Start Hear 
+=====================================*/
+/* Service Details Part Start Hear */
+#service_details {
+    padding: 100px 0;
+}
+
+.service_detaile_img .overly h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #d9b257;
+}
+
+.service_detaile_img .overly p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+}
+
+.service_detaile_img {
+    position: relative;
+}
+
+.service_detaile_img .overly {
+    width: 970px;
+    padding: 30px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #d9b257;
+    border-top: 1px solid #d9b257;
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+}
+
+.service_detaile_text {
+    margin-top: 120px;
+}
+
+.service_detaile_text p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 55px;
+}
+
+.service_list ul li {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.service_list ul li i {
+    color: #d9b257;
+    padding-right: 10px;
+}
+
+/* Service Details Part End Hear */
+
+/*====================================
+        Service Page Part End Hear 
+=====================================*/
+
+/*====================================
+        Project Page Part Start Hear 
+=====================================*/
+/* Projcet_items Start Hear */
+#our_porject_list {
+    padding: 100px 0;
+}
+
+.our_porject_img {
+    position: relative;
+}
+
+.our_porject_img .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+
+
+}
+
+.our_porject_img .overly a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.our_porject_img .overly a i {
+    padding-left: 10px;
+}
+
+.our_porject_img:hover .overly {
+    height: 100%;
+}
+
+.our_porject_img:hover .overly a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.our_project_items:hover h6,
+.our_project_items:hover p {
+    color: #d9b257;
+}
+
+.our_project_items h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999999;
+    margin-top: 25px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.our_project_items p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #999999;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.project_items_mar {
+    margin-bottom: 90px;
+}
+
+.project_pagination {
+    margin-top: 50px;
+}
+
+.project_pagination nav {
+    margin-left: 40px;
+}
+
+.project_pagination .pagination .page-item .page-link {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    margin: 0 5px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.project_pagination .pagination .page-item .page-link:hover {
+    background-color: #d9b257;
+    border-color: #d9b257;
+    color: #ffffff;
+}
+
+.project_pagination .pagination .page-item.active .page-link {
+    background: #d9b257;
+    color: #ffffff;
+    border-color: #999999;
+}
+
+/* Projcet_items End Hear */
+
+/*====================================
+        Project Page Part End Hear 
+=====================================*/
+
+/*====================================
+        Contact Page Part End Hear 
+=====================================*/
+/* Contact Area Start Hear*/
+.contact_right {
+    margin-top: 50px;
+}
+
+.contact_text h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #d9b257;
+    margin-bottom: 5px;
+}
+
+.contact_text p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #444444;
+    line-height: 26px;
+}
+
+.contact_text p span {
+    display: block;
+}
+
+.contact_bottom h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #d9b257;
+    margin-bottom: 40px;
+}
+
+.contact_left {
+    margin-top: 50px;
+}
+
+/* Contact Area End Hear*/
+
+.contact_box .n-box {
+    width: 469px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    margin-right: 30px;
+}
+
+.contact_box .e-box {
+    width: 469px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+.contact_box textarea {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.contact_box .c_sub {
+    width: 100%;
+    padding: 15px 0;
+    background: #d9b257;
+    border: none;
+    margin-top: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*====================================
+        Contact Page Part End Hear 
+=====================================*/
+
+/*====================================
+        404 Page Part End Hear 
+=====================================*/
+/* 404 Banner Part Start Hear */
+#page404 {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    padding: 185px 0;
+}
+
+.page_404_text p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.page_404_text a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 15px 20px;
+    background: #d9b257;
+}
+
+/* 404 Banner Part End Hear */
+/*====================================
+        404 Page Part End Hear 
+=====================================*/
